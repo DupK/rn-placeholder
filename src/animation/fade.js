@@ -19,11 +19,13 @@ const Fade = ({ children }) => {
         toValue: END_VALUE,
         duration: DURATION,
         useNativeDriver,
+        isInteraction: false,
       }),
       Animated.timing(animation, {
         toValue: START_VALUE,
         duration: DURATION,
         useNativeDriver,
+        isInteraction: false,
       }),
     ]).start((e) => {
       if (e.finished) {

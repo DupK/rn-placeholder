@@ -27,6 +27,7 @@ const Shine = ({ children }) => {
       Animated.timing(animation, {
         toValue: END_VALUE,
         duration: DURATION,
+        isInteraction: false,
       }),
     ]).start(e => e.finished && start());
   }
